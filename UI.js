@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded",function(){
         event.preventDefault();
         let data = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.left = "1vmax";
-        document.getElementById(data).style.top = "1vmax";
+        document.getElementById(data).style.left = "calc(1.5vmax - 3px)";
+        document.getElementById(data).style.top = "calc(1.5vmax - 3px)";
         bgm.autoplay=true;
         bgm.loop=true;
         bgm.load();
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded",function(){
         event.preventDefault();
         let data = event.dataTransfer.getData("text");
         event.target.appendChild(document.getElementById(data));
-        document.getElementById(data).style.left = "1vmax";
-        document.getElementById(data).style.top = "1vmax";
+        document.getElementById(data).style.left = "calc(1.5vmax - 3px)";
+        document.getElementById(data).style.top = "calc(1.5vmax - 3px)";
         bgm.pause();
         computer.style.animation="none";
       }
